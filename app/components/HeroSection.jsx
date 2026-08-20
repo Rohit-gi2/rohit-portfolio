@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import heroImg from "@/public/images/hero-image-new.png";
 
 const HeroSection = () => {
     return (
@@ -24,11 +25,11 @@ const HeroSection = () => {
                             sequence={[
                                 "Rohit",
                                 2000,
+                                "Software Engineer",
+                                2000,
                                 "Full-Stack Web Developer",
                                 2000,
-                                "Software Developer",
-                                2000,
-                                "UI/UX Engineer",
+                                "UI Developer",
                                 2000,
                             ]}
                             wrapper="span"
@@ -47,7 +48,7 @@ const HeroSection = () => {
                             Hire Me
                         </Link>
                         <Link
-                            href="https://drive.google.com/file/d/1mIZHOx47BH_uEtVQJzUbDHyc7VLsSEzQ/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                            href="" target="_blank" rel="noopener noreferrer"
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 to-teal-500 hover:bg-slate-800 text-white mt-3"
                         >
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
@@ -62,13 +63,14 @@ const HeroSection = () => {
                     transition={{ duration: 0.5 }}
                     className="col-span-4 place-self-center mt-4 lg:mt-0"
                 >
-                    <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+                    <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
                         <Image
-                            src="/images/hero-image.png"
+                            src={heroImg}
                             alt="hero image"
-                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            width={280}
-                            height={280}
+                            fill
+                            priority
+                            sizes="(max-width: 1024px) 250px, 400px"
+                            className="object-cover"
                         />
                     </div>
                 </motion.div>
