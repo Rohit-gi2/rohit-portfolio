@@ -7,11 +7,10 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Global Cryosphere Watch Redesign",
+    title: "Global Cryosphere Watch",
     description: "Revamped Global Cryosphere Watch web application utilizing HTML, CSS, JavaScript, PHP and WordPress. Developed custom plugins, 5+ tables with advanced multiple filters and implementing download functionality for snow trackers.",
     image: "/images/projects/1.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Rohit-gi/public",
     previewUrl: "https://globalcryospherewatch.org/",
   },
   {
@@ -29,7 +28,6 @@ const projectsData = [
     description: "Redesigned the ZARA website for LIS-646 course to enhance user shopping experience using plugins like Elementor and WooCommerce, improving responsiveness with HTML, CSS, and WordPress.",
     image: "/images/projects/3.jpeg",
     tag: ["All", "Web"],
-    gitUrl: "/",
     previewUrl: "https://drive.google.com/file/d/1-A-n2RpKmcWzwhiAJ7y8cFcM_2z8g8eF/view",
   },
   {
@@ -39,16 +37,14 @@ const projectsData = [
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/Rohit-gi/badgerchat-web",
-    previewUrl: "/",
   },
   {
     id: 5,
-    title: "Survey Builder Tool",
-    description: "Built a React survey builder tool with JSON integration utilizing React 18, Bootstrap, React Hook Form, and react-dnd for drag-and-drop features. Implemented custom components and multi-column rows.",
-    image: "/images/projects/5.gif",
+    title: "Inventrac",
+    description: "Inventrac is a small inventory tracking app which supports CRUD operations. It has a React frontend for managing products and a FastAPI API backed by PostgreSQL",
+    image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Rohit-gi2/inventrac",
   },
   {
     id: 6,
@@ -56,8 +52,6 @@ const projectsData = [
     description: "Led the development of lead generation website for a education consulting business with HTML, CSS, JavaScript and AJAX for efficient data handling and user engagement.",
     image: "/images/projects/6.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
   },
 ];
 
@@ -80,11 +74,11 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section className="projects-section" id="projects">
+      <h2 className="projects-title text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="project-filters text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -101,7 +95,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="project-grid grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

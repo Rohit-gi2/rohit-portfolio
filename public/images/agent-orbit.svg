@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="none">
+  <defs>
+    <linearGradient id="background" x1="72" y1="48" x2="564" y2="592" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111B31"/>
+      <stop offset=".55" stop-color="#0B1221"/>
+      <stop offset="1" stop-color="#14152D"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="100" y1="177" x2="541" y2="461" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#69E2F3" stop-opacity=".12"/>
+      <stop offset=".47" stop-color="#72DDF2" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#A286FF" stop-opacity=".2"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="113" y1="438" x2="523" y2="191" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6FE4F4" stop-opacity=".04"/>
+      <stop offset=".5" stop-color="#6FE4F4" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#9B83FF" stop-opacity=".06"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="matrix(0 100 -100 0 320 316)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9AF3F3" stop-opacity=".95"/>
+      <stop offset=".22" stop-color="#61D8E9" stop-opacity=".72"/>
+      <stop offset=".58" stop-color="#586FEB" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#7776FF" stop-opacity=".02"/>
+    </radialGradient>
+    <radialGradient id="backlight" cx="0" cy="0" r="1" gradientTransform="matrix(0 286 -286 0 320 320)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#526BFF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#526BFF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#AFC2E3" fill-opacity=".12"/>
+    </pattern>
+    <filter id="large-glow" x="131" y="126" width="378" height="378" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="640" rx="36" fill="url(#background)"/>
+  <rect width="640" height="640" rx="36" fill="url(#dots)"/>
+  <circle cx="320" cy="320" r="286" fill="url(#backlight)"/>
+
+  <ellipse cx="320" cy="320" rx="226" ry="104" transform="rotate(-32 320 320)" stroke="url(#orbit)" stroke-width="1.5"/>
+  <ellipse cx="320" cy="320" rx="226" ry="104" transform="rotate(32 320 320)" stroke="url(#orbit)" stroke-opacity=".62" stroke-width="1.2"/>
+  <ellipse cx="320" cy="320" rx="157" ry="238" transform="rotate(69 320 320)" stroke="url(#orbit)" stroke-opacity=".34" stroke-width="1"/>
+
+  <path d="M92 409C164 377 205 280 281 292c70 11 109 116 171 105 40-7 74-56 103-124" stroke="url(#ribbon)" stroke-width="20" stroke-linecap="round"/>
+  <path d="M96 226c68-16 120 27 180 89 53 56 105 107 164 83 39-16 68-56 103-74" stroke="url(#orbit)" stroke-opacity=".68" stroke-width="2" stroke-dasharray="3 10" stroke-linecap="round"/>
+  <path d="M155 491c51-70 75-146 144-172 53-20 99 10 151 7 39-2 69-22 103-53" stroke="#88EAF0" stroke-opacity=".28" stroke-width="1.5"/>
+
+  <circle cx="320" cy="316" r="160" fill="#6876FF" fill-opacity=".18" filter="url(#large-glow)"/>
+  <circle cx="320" cy="316" r="91" fill="#111A31" fill-opacity=".88" stroke="url(#orbit)" stroke-width="1.5"/>
+  <circle cx="320" cy="316" r="76" fill="url(#core)"/>
+  <circle cx="320" cy="316" r="58" stroke="#B1F5F5" stroke-opacity=".48"/>
+
+  <path d="M320 278v76m-25-51 25-25 25 25m-50 26 25 25 25-25" stroke="#D3FFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="320" cy="316" r="5" fill="#E4FFFF"/>
+  <circle cx="320" cy="316" r="20" stroke="#D3FFFF" stroke-opacity=".18"/>
+
+  <circle cx="151" cy="217" r="28" fill="#66DFF0" fill-opacity=".12"/>
+  <circle cx="151" cy="217" r="8" fill="#8BEAF1"/>
+  <circle cx="151" cy="217" r="4" fill="#E6FFFF"/>
+
+  <circle cx="480" cy="222" r="35" fill="#9A83FF" fill-opacity=".12"/>
+  <circle cx="480" cy="222" r="11" fill="#9F91FF"/>
+  <circle cx="480" cy="222" r="5" fill="#F2EEFF"/>
+
+  <circle cx="170" cy="431" r="32" fill="#9A83FF" fill-opacity=".1"/>
+  <circle cx="170" cy="431" r="9" fill="#A695FF"/>
+  <circle cx="170" cy="431" r="4" fill="#F2EEFF"/>
+
+  <circle cx="487" cy="421" r="26" fill="#66DFF0" fill-opacity=".12"/>
+  <circle cx="487" cy="421" r="7" fill="#8BEAF1"/>
+  <circle cx="487" cy="421" r="3" fill="#E6FFFF"/>
+
+  <circle cx="320" cy="119" r="3" fill="#90EEF2"/>
+  <circle cx="521" cy="320" r="3" fill="#B2A0FF"/>
+  <circle cx="320" cy="518" r="3" fill="#90EEF2"/>
+  <circle cx="119" cy="320" r="3" fill="#B2A0FF"/>
+</svg>

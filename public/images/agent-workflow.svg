@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="none">
+  <defs>
+    <linearGradient id="card" x1="96" y1="112" x2="544" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17243A"/>
+      <stop offset="1" stop-color="#0C1424"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="103" y1="124" x2="536" y2="523" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#79E5F4"/>
+      <stop offset="1" stop-color="#9B8CFF"/>
+    </linearGradient>
+    <linearGradient id="core" x1="248" y1="246" x2="391" y2="397" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4ED5E6"/>
+      <stop offset="1" stop-color="#7776FF"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="matrix(0 240 -240 0 320 320)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#546BFF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#546BFF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#A8B9D2" stroke-opacity=".06"/>
+    </pattern>
+    <filter id="glow" x="170" y="170" width="300" height="300" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="640" rx="40" fill="#0B1120"/>
+  <rect width="640" height="640" rx="40" fill="url(#grid)"/>
+  <circle cx="320" cy="320" r="240" fill="url(#halo)"/>
+  <circle cx="320" cy="320" r="114" fill="#5B7CFA" fill-opacity=".26" filter="url(#glow)"/>
+
+  <path d="M190 188C227 188 230 246 259 263M450 188C412 188 411 246 381 263M190 450C228 450 230 394 259 377M450 450C412 450 410 394 381 377" stroke="url(#edge)" stroke-opacity=".68" stroke-width="2" stroke-dasharray="5 8"/>
+  <circle cx="217" cy="205" r="4" fill="#79E5F4"/>
+  <circle cx="424" cy="205" r="4" fill="#A294FF"/>
+  <circle cx="218" cy="432" r="4" fill="#A294FF"/>
+  <circle cx="423" cy="432" r="4" fill="#79E5F4"/>
+
+  <rect x="57" y="119" width="150" height="112" rx="18" fill="url(#card)" stroke="url(#edge)" stroke-opacity=".42"/>
+  <circle cx="81" cy="146" r="10" fill="#79E5F4" fill-opacity=".16"/>
+  <path d="M77 146h8M81 142v8" stroke="#79E5F4" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="98" y="150" fill="#C5D3E5" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">INPUT</text>
+  <rect x="77" y="168" width="108" height="6" rx="3" fill="#B7C6DA" fill-opacity=".28"/>
+  <rect x="77" y="184" width="78" height="6" rx="3" fill="#B7C6DA" fill-opacity=".18"/>
+  <rect x="77" y="200" width="92" height="6" rx="3" fill="#B7C6DA" fill-opacity=".18"/>
+
+  <rect x="433" y="119" width="150" height="112" rx="18" fill="url(#card)" stroke="url(#edge)" stroke-opacity=".42"/>
+  <circle cx="457" cy="146" r="10" fill="#A294FF" fill-opacity=".18"/>
+  <path d="M453 146h8M457 142v8" stroke="#B8AAFF" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="474" y="150" fill="#C5D3E5" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">TOOLS</text>
+  <rect x="453" y="168" width="108" height="6" rx="3" fill="#B7C6DA" fill-opacity=".28"/>
+  <rect x="453" y="184" width="86" height="6" rx="3" fill="#B7C6DA" fill-opacity=".18"/>
+  <rect x="453" y="200" width="98" height="6" rx="3" fill="#B7C6DA" fill-opacity=".18"/>
+
+  <rect x="57" y="409" width="150" height="112" rx="18" fill="url(#card)" stroke="url(#edge)" stroke-opacity=".42"/>
+  <circle cx="81" cy="436" r="10" fill="#A294FF" fill-opacity=".18"/>
+  <path d="M77 436h8M81 432v8" stroke="#B8AAFF" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="98" y="440" fill="#C5D3E5" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">CONTEXT</text>
+  <rect x="77" y="458" width="108" height="6" rx="3" fill="#B7C6DA" fill-opacity=".28"/>
+  <rect x="77" y="474" width="78" height="6" rx="3" fill="#B7C6DA" fill-opacity=".18"/>
+  <rect x="77" y="490" width="92" height="6" rx="3" fill="#B7C6DA" fill-opacity=".18"/>
+
+  <rect x="433" y="409" width="150" height="112" rx="18" fill="url(#card)" stroke="url(#edge)" stroke-opacity=".42"/>
+  <circle cx="457" cy="436" r="10" fill="#79E5F4" fill-opacity=".16"/>
+  <path d="m453 436 3 3 5-6" stroke="#79E5F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="474" y="440" fill="#C5D3E5" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">RESULT</text>
+  <rect x="453" y="458" width="108" height="6" rx="3" fill="#B7C6DA" fill-opacity=".28"/>
+  <rect x="453" y="474" width="86" height="6" rx="3" fill="#B7C6DA" fill-opacity=".18"/>
+  <rect x="453" y="490" width="98" height="6" rx="3" fill="#B7C6DA" fill-opacity=".18"/>
+
+  <rect x="232" y="232" width="176" height="176" rx="36" fill="#111E33" stroke="url(#edge)" stroke-width="1.5"/>
+  <rect x="247" y="247" width="146" height="146" rx="29" fill="url(#core)" fill-opacity=".12"/>
+  <circle cx="320" cy="309" r="32" fill="#79E5F4" fill-opacity=".12" stroke="#79E5F4" stroke-opacity=".8"/>
+  <path d="M320 288v42m-15-27 15-15 15 15m-30 12 15 15 15-15" stroke="#A8F1F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="320" y="365" fill="#E4ECF8" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2" text-anchor="middle">AGENT FLOW</text>
+  <circle cx="320" cy="232" r="4" fill="#79E5F4"/>
+  <circle cx="408" cy="320" r="4" fill="#A294FF"/>
+  <circle cx="320" cy="408" r="4" fill="#79E5F4"/>
+  <circle cx="232" cy="320" r="4" fill="#A294FF"/>
+</svg>

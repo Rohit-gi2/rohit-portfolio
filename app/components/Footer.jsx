@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-<footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
-  <div className="container p-10 flex justify-between items-center">
+<footer className="site-footer footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
+  <div className="site-footer-inner container p-10 flex justify-between items-center">
     <Image
       src="/images/logo.png"
       alt="Logo"

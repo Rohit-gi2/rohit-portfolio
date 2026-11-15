@@ -13,7 +13,9 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>Node.js</li>
         <li>Express</li>
-        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>Python</li>
+        <li>Agentic AI/LLM</li>
         <li>AWS/MS Azure</li>
       </ul>
     ),
@@ -23,7 +25,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Masters, Information Science (UI/UX)</li>
+        <li>Master of Science, Information</li>
         <li>University of Wisconsin, Madison</li>
       </ul>
     ),
@@ -51,14 +53,14 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} alt="About section image" />
+    <section className="about-section text-white" id="about">
+      <div className="about-grid md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        <Image className="about-image" src="/images/agent-orbit.svg" width={500} height={500} alt="Abstract orbital network illustration" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          I am a full stack software engineer with a strong enthusiasm for developing engaging and responsive web applications. My background includes hands-on experience with technologies such as JavaScript, React, Redux, Node.js, Express, MySQL, HTML, CSS, Git and AWS/MS Azure cloud deployment. I am a fast and adaptable learner, always eager to explore new tools and enhance my technical expertise. I thrive in collaborative environments and enjoy working alongside others to build innovative and high-performing applications.          </p>
-          <div className="flex flex-row font-bold justify-start mt-8">
+          I am a full-stack software engineer with a strong enthusiasm for developing engaging and responsive web applications. My background includes hands-on experience with technologies such as JavaScript, React, Redux, Node.js, Express, Python, SQL, NoSQL, HTML, CSS, Git and AWS/MS Azure cloud deployment. I am a fast and adaptable learner, always eager to explore new tools and enhance my technical expertise. I thrive in collaborative environments and enjoy working alongside others to build innovative and high-performing applications.          </p>
+          <div className="about-tabs flex flex-row font-bold justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -81,7 +83,7 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="about-content mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
