@@ -39,7 +39,7 @@ const HeroSection = () => {
                         />
                     </p>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                    Skilled in developing full-stack scalable web applications, with a strong focus on learning emerging technologies to enhance usability and contribute meaningfully to product success.
+                    Skilled in developing full-stack scalable software applications and user interfaces for AI-powered features, with a strong focus on learning emerging technologies to enhance usability and contribute meaningfully to product success.
                     </p>
                     <div>
                         <Link
@@ -49,13 +49,13 @@ const HeroSection = () => {
                             Hire Me
                         </Link>
                         <Link
-                            href="https://drive.google.com/file/d/1GKV5CBWhYcYWClV-WURxhMK5gsuGsa0t/view?usp=sharing"
+                            href="https://www.linkedin.com/in/rohit-k96/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 to-teal-500 hover:bg-slate-800 text-white mt-3"
                         >
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                                Download CV
+                             Connect
                             </span>
                         </Link>
                     </div>
